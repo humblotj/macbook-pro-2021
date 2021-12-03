@@ -1,0 +1,235 @@
+.intro-hero {
+  position: relative;
+  margin-top: 44px;
+  min-height: 100vh;
+  z-index: 3;
+  background-color: #fff;
+  margin-bottom: -20vh;
+
+  .video-container {
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+
+    video {
+      display: block;
+      object-fit: cover;
+      object-position: top;
+      width: 100%;
+      min-height: 100vh;
+      position: relative;
+      z-index: 1;
+      margin: 0;
+      transform: translateX(-50%);
+      left: 50%;
+      border: 0;
+      margin: -1px;
+    }
+  }
+
+  .intro-text-container {
+    position: relative;
+    text-align: center;
+
+    .intro-paragraph {
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .intro-price {
+      display: inline-block;
+    }
+
+    h2 {
+      font-size: 96px;
+      line-height: 1.0416666667;
+      font-weight: 600;
+      letter-spacing: -0.015em;
+      font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica,
+        Arial, sans-serif;
+    }
+
+    .typography-eyebrow-super {
+      display: block;
+      margin-bottom: 0.4em;
+      font-size: 32px;
+      line-height: 1.125;
+      font-weight: 600;
+      letter-spacing: 0.004em;
+      font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica,
+        Arial, sans-serif;
+      flex-basis: 83.3333333333%;
+      max-width: 83.3333333333%;
+    }
+
+    .typography-hero-cta {
+      font-size: 21px;
+      line-height: 1.381002381;
+      font-weight: 600;
+      letter-spacing: 0.011em;
+      font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica,
+        Arial, sans-serif;
+      margin-top: 25px;
+    }
+
+    .cta-container {
+      padding-bottom: 3px;
+      margin-top: 25px;
+
+      li {
+        display: inline;
+        margin: 0 0.8em;
+        vertical-align: text-top;
+
+        &:first-child {
+          margin-left: 0;
+        }
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+        a {
+          color: #06c;
+          letter-spacing: inherit;
+
+          .more {
+            &:after {
+              content: '';
+              padding-left: 0.3em;
+              font-family: SF Pro Icons;
+              z-index: 1;
+            }
+          }
+
+          .play-circle {
+            &:after {
+              content: '';
+              padding-left: 0.3em;
+              font-family: SF Pro Icons;
+              z-index: 1;
+            }
+          }
+
+          &:hover {
+            span:first-child {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1068px) {
+  .intro-hero {
+    overflow: hidden;
+    min-height: unset;
+
+    .video-container {
+      width: 840px;
+      height: 444px;
+      left: 50%;
+      transform: translateX(-50%);
+
+      video {
+        min-height: unset;
+      }
+    }
+  }
+
+  .intro-text-container {
+    margin-top: 55px;
+
+    .section-content {
+      max-width: 602px;
+
+      h2 {
+        font-size: 80px;
+        line-height: 1.05;
+
+        flex-basis: 83.3333333333%;
+        max-width: 83.3333333333%;
+      }
+
+      > * {
+        opacity: 0;
+        transform: translateY(10px);
+      }
+
+      .typography-eyebrow-super {
+        font-size: 28px;
+        line-height: 1.1428571429;
+
+        flex-basis: 100%;
+        max-width: 100%;
+      }
+
+      .typography-hero-cta {
+        font-size: 21px;
+        line-height: 1.381002381;
+        letter-spacing: 0.011em;
+        margin-top: 25px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 734px) {
+  .intro-hero {
+    margin-bottom: unset;
+
+    .video-container {
+      width: 460px;
+      height: 304px;
+    }
+    .intro-text-container {
+      margin-top: 37px;
+
+      .section-content {
+        max-width: 602px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 87.5%;
+
+        h2 {
+          font-size: 40px;
+          line-height: 1.1;
+          letter-spacing: 0em;
+
+          flex-basis: 100%;
+          max-width: 100%;
+        }
+
+        .typography-eyebrow-super {
+          font-size: 24px;
+          line-height: 1.1666666667;
+          letter-spacing: 0.009em;
+        }
+
+        .intro-price {
+          display: block;
+        }
+
+        .typography-hero-cta {
+          font-size: 19px;
+          line-height: 1.4211026316;
+          letter-spacing: 0.012em;
+        }
+
+        .cta-container {
+          li {
+            margin: 0;
+            display: block;
+
+            &:last-child {
+              margin: 0.4em 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}

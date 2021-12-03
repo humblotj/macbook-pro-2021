@@ -1,0 +1,109 @@
+.harware-lockup {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+  margin-top: 100px;
+
+  &.with-caption {
+    padding-bottom: 36px;
+  }
+
+  .hardware-image {
+    display: block;
+    width: 1204px;
+    height: 736px;
+  }
+
+  .hardware-lockup-figure {
+    position: absolute;
+    top: 17px;
+
+    .hardware-lockup-media {
+      display: block;
+      width: 984px;
+      height: 636px;
+      mask-size: contain;
+      mask-position: center;
+      mask-repeat: no-repeat;
+      mask-image: url(../../assets/m1_laptop_hw_mask_large.png);
+
+      img,
+      video {
+        width: 100%;
+        height: auto;
+        opacity: 0.15;
+      }
+    }
+
+    .hardware-lockup-caption {
+      margin-right: -16px;
+      margin-top: 100px;
+      text-align: right;
+    }
+  }
+}
+
+.typography-body-reduced-tight {
+  font-size: 14px;
+  line-height: 1.2857742857;
+  font-weight: 400;
+  letter-spacing: -0.016em;
+  font-family: SF Pro Text, SF Pro Icons, Helvetica Neue, Helvetica, Arial,
+    sans-serif;
+}
+
+@media only screen and (max-width: 1068px) {
+  .harware-lockup {
+    margin-top: 72px;
+
+    .hardware-image {
+      width: 694px;
+      height: 426px;
+    }
+
+    .hardware-lockup-figure {
+      top: 10px;
+
+      .hardware-lockup-media {
+        width: 568px;
+        height: 368px;
+      }
+
+      .hardware-lockup-caption {
+        margin-right: -9px;
+        margin-top: 65px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 734px) {
+  .harware-lockup {
+    margin-top: 48px;
+
+    &.with-caption {
+      padding-bottom: 27px;
+    }
+
+    .hardware-image {
+      width: 340px;
+      height: 208px;
+    }
+
+    .hardware-lockup-figure {
+      top: 6px;
+
+      .hardware-lockup-media {
+        width: 276px;
+        height: 178px;
+      }
+
+      .hardware-lockup-caption {
+        margin-right: -4px;
+        max-width: 285px;
+        margin-top: 33px;
+      }
+    }
+  }
+}

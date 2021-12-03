@@ -1,0 +1,46 @@
+.note {
+  position: relative;
+  z-index: 999;
+  display: flex;
+  height: 60px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  justify-content: center;
+  align-items: center;
+  background-color: #fafafa;
+
+  .note-inner {
+    max-width: 980px;
+    margin: 0 auto;
+
+    .note-paragraph {
+      margin-bottom: 0px;
+      color: #111;
+      font-size: 20px;
+      font-weight: 600;
+      text-align: center;
+    }
+  }
+}
+
+@media screen and (max-width: 1068px) {
+  .note {
+    .note-inner {
+      width: 87.5%;
+      max-width: none;
+    }
+  }
+}
+
+@media screen and (max-width: 734px) {
+  .note {
+    padding-right: 10px;
+    padding-left: 10px;
+
+    .note-inner {
+      .note-paragraph {
+        font-size: 16px;
+      }
+    }
+  }
+}

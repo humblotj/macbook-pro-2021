@@ -1,0 +1,85 @@
+.hero-ports {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  margin: 455px 0 192px;
+  margin-top: 100px;
+  margin-bottom: 0;
+
+  &:before {
+    content: '';
+    height: 70px;
+    width: 100%;
+    position: absolute;
+    background-color: #fff;
+    left: 0;
+    z-index: 0;
+  }
+
+  .left-ports-container {
+    margin-right: 105px;
+    transform: translateX(-15vw);
+  }
+
+  .right-ports-container {
+    transform: translateX(15vw);
+  }
+
+  .ports-container {
+    img {
+      position: relative;
+      width: 1122px;
+      height: 86px;
+    }
+  }
+}
+
+@media screen and (max-width: 1068px) {
+  .hero-ports {
+    margin-top: 0;
+
+    .left-ports-container {
+      margin-right: 75px;
+    }
+
+    .right-ports-container {
+      transform: translateX(15vw);
+    }
+
+    .ports-container {
+      img {
+        position: relative;
+        width: 778px;
+        height: 60px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 734px) {
+  .hero-ports {
+    margin: 82px 0 85px;
+    margin-top: 120px;
+    flex-direction: column-reverse;
+    align-items: center;
+
+    .left-ports-container {
+      margin-right: 284px;
+      margin-top: 27px;
+      transform: translateX(-20vw);
+    }
+
+    .right-ports-container {
+      margin-left: 330px;
+      transform: translateX(20vw);
+    }
+
+    .ports-container {
+      img {
+        position: relative;
+        width: 548px;
+        height: 42px;
+      }
+    }
+  }
+}

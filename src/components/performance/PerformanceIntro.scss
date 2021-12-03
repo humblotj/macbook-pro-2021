@@ -1,0 +1,479 @@
+.subsection-performance-intro {
+  .sticky-container {
+    min-height: 300vh;
+    text-align: center;
+
+    .sticky-element {
+      position: sticky;
+      top: 0;
+      height: auto;
+      min-height: 100vh;
+
+      .performance-swipe-alt {
+        display: block;
+        position: absolute;
+        min-height: 100vh;
+        background-color: #fff;
+        width: 100%;
+
+        .performance-alt-headline {
+          color: #1d1d1f;
+        }
+
+        > div.performance-alt-headline {
+          opacity: 0;
+        }
+      }
+
+      .performance-section-pad-top {
+        padding-top: 175px;
+      }
+
+      .performance-section-pad-bottom {
+        padding-bottom: 175px;
+      }
+
+      .performace-swipe {
+        clip-path: inset(100% 0px 0px);
+        position: relative;
+        min-height: 100vh;
+        overflow: hidden;
+
+        &:after {
+          content: '';
+          height: 10px;
+          width: 100%;
+          position: absolute;
+          bottom: -10px;
+          background-color: #000;
+          left: 0;
+        }
+
+        .performance-swipe-headline {
+          position: relative;
+          z-index: 1;
+          color: #f5f5f7;
+        }
+
+        .gradient-container {
+          position: absolute;
+          top: 30%;
+          margin: 0 auto;
+          left: 50%;
+          transform: translateX(-50%) translateY(-50%);
+
+          img {
+            width: 100vh;
+            height: auto;
+          }
+        }
+      }
+
+      .chip-container {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        margin-top: 72px;
+
+        .chip-headline {
+          color: #f5f5f7;
+        }
+
+        .pro-chip-container {
+          margin-right: 120px;
+        }
+
+        .pro-chip-container,
+        .max-chip-container {
+          position: relative;
+          z-index: 1;
+
+          img {
+            width: 370px;
+            height: 370px;
+          }
+        }
+
+        .pro-text-container {
+          --colors: 5;
+          --angle: 90;
+          --blend: 0.5;
+          --color1: #252fff;
+          --color2: #256af3;
+          --color3: #7cc0e2;
+          --color4: #256af3;
+          --color5: #252fff;
+          --fade1: 0%;
+          --fade2: 50%;
+          --fade3: 100%;
+          --fade4: 150%;
+          --fade5: 200%;
+        }
+
+        .max-text-container {
+          --colors: 5;
+          --angle: 90;
+          --blend: 0.5;
+          --color1: #8727ff;
+          --color2: #9d44fd;
+          --color3: #ff9fe1;
+          --color4: #9d44fd;
+          --color5: #8727ff;
+          --fade1: 0%;
+          --fade2: 50%;
+          --fade3: 100%;
+          --fade4: 150%;
+          --fade5: 200%;
+        }
+
+        .chip-copy {
+          background-image: linear-gradient(
+            90deg,
+            var(--color1) var(--fade1),
+            var(--color2) var(--fade2),
+            var(--color3) var(--fade3),
+            var(--color4) var(--fade4),
+            var(--color5) var(--fade5)
+          );
+          color: var(--color2);
+          -webkit-text-fill-color: transparent;
+          text-fill-color: transparent;
+          -webkit-background-clip: text;
+          background-clip: text;
+          padding-bottom: 5px;
+          margin-bottom: -5px;
+        }
+      }
+
+      .outer-chip-container {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        left: 0;
+        right: 0;
+        top: 260px;
+        z-index: 3;
+        margin-top: 72px;
+        transform: translateY(25vh);
+
+        .image-sequence {
+          width: 370px;
+          height: 370px;
+          display: block;
+
+          canvas {
+            width: 330px !important;
+            height: 330px !important;
+            margin-top: 15px;
+            margin-left: 2px;
+          }
+        }
+      }
+
+      .hero-copy-container {
+        position: relative;
+        color: #f5f5f7;
+        margin-top: 85px;
+
+        .hero-copy {
+          margin-left: auto;
+          margin-right: auto;
+
+          flex-basis: 83.3333333333%;
+          max-width: 83.3333333333%;
+        }
+      }
+    }
+  }
+
+  .modal-trigger-container {
+    margin-top: 45px;
+    text-align: center;
+    position: relative;
+
+    button {
+      font-size: 21px;
+      line-height: 1.1904761905;
+      font-weight: 600;
+      letter-spacing: 0.011em;
+      font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica,
+        Arial, sans-serif;
+      transition: all 0.4s ease-in-out;
+      border: 2px solid #f5f5f7;
+      background: #f5f5f7;
+      color: #000;
+      min-width: 26px;
+      padding: 12px 22px;
+      cursor: pointer;
+      display: inline-block;
+      text-align: center;
+      white-space: nowrap;
+      border-radius: 980px;
+
+      &:hover {
+        color: #f5f5f7;
+        background-color: initial;
+        border: 2px solid #f5f5f7;
+
+        &:after {
+          transition: all 0.4s ease-in-out;
+          color: #f5f5f7;
+          background-color: initial;
+        }
+      }
+
+      &:after {
+        padding-left: 0.3em;
+        top: 0;
+        position: static;
+        content: '';
+        font-family: SF Pro Icons;
+        color: inherit;
+        display: inline-block;
+        font-style: normal;
+        font-weight: inherit;
+        font-size: inherit;
+        line-height: 1;
+        z-index: 1;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.typography-headline-super {
+  font-size: 80px;
+  line-height: 1.05;
+  font-weight: 600;
+  letter-spacing: -0.015em;
+  font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial,
+    sans-serif;
+}
+
+.typography-section-copy {
+  font-size: 28px;
+  line-height: 1.1428571429;
+  font-weight: 600;
+  letter-spacing: 0.007em;
+  font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial,
+    sans-serif;
+}
+
+.typography-section-eyebrow {
+  font-size: 24px;
+  line-height: 1.1666666667;
+  font-weight: 600;
+  letter-spacing: 0.009em;
+  font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial,
+    sans-serif;
+}
+
+.typography-performance-stat {
+  font-size: 19px;
+  line-height: 1.2105263158;
+  font-weight: 600;
+  letter-spacing: 0.012em;
+  font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial,
+    sans-serif;
+}
+
+@media only screen and (max-width: 1068px) {
+  .subsection-performance-intro {
+    .sticky-container {
+      .sticky-element {
+        .performance-section-pad-top {
+          padding-top: 125px;
+        }
+
+        .performance-section-pad-bottom {
+          padding-bottom: 125px;
+        }
+
+        .outer-chip-container {
+          top: 192px;
+
+          .image-sequence {
+            width: 260px;
+            height: 260px;
+
+            canvas {
+              width: 231px !important;
+              height: 231px !important;
+              margin-top: 11px;
+              margin-left: 1px;
+            }
+          }
+        }
+
+        .chip-container {
+          margin-top: 60px;
+
+          .pro-chip-container {
+            margin-right: 88px;
+          }
+
+          .pro-chip-container,
+          .max-chip-container {
+            img {
+              width: 260px;
+              height: 260px;
+            }
+          }
+
+          .pro-text-container,
+          .max-text-container {
+            margin-top: 20px;
+          }
+        }
+
+        .hero-copy-container {
+          max-width: 590px;
+
+          .hero-copy {
+            flex-basis: 100%;
+            max-width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  .typography-headline-super {
+    font-size: 64px;
+    line-height: 1.0625;
+    letter-spacing: -0.009em;
+  }
+
+  .typography-section-copy {
+    font-size: 21px;
+    line-height: 1.1904761905;
+    letter-spacing: 0.011em;
+  }
+
+  .typography-section-eyebrow {
+    font-size: 21px;
+    line-height: 1.1904761905;
+    letter-spacing: 0.011em;
+  }
+
+  .typography-section-eyebrow {
+    font-size: 21px;
+    line-height: 1.1904761905;
+    letter-spacing: 0.011em;
+  }
+}
+
+@media only screen and (max-width: 734px) {
+  .subsection-performance-intro {
+    .sticky-container {
+      .sticky-element {
+        .performance-section-pad-top {
+          padding-top: 120px;
+        }
+
+        .performance-section-pad-bottom {
+          padding-bottom: 120px;
+        }
+
+        .performace-swipe {
+          .gradient-container {
+            top: 20%;
+          }
+        }
+
+        .outer-chip-container {
+          top: 192px;
+
+          .image-sequence {
+            width: 134px;
+            height: 134px;
+
+            canvas {
+              width: 121px !important;
+              height: 121px !important;
+              margin-top: 5px;
+              margin-left: -1px;
+            }
+          }
+        }
+
+        .chip-container {
+          margin-top: 35px;
+
+          .chip-headline {
+            color: #f5f5f7;
+          }
+
+          .pro-chip-container {
+            margin-right: 22px;
+          }
+
+          .pro-chip-container,
+          .max-chip-container {
+            width: 135px;
+
+            img {
+              width: 134px;
+              height: 134px;
+            }
+          }
+
+          .pro-text-container {
+            margin-top: 17px;
+            margin-left: 7px;
+          }
+
+          .pro-text-container,
+          .max-text-container {
+            margin-top: 20px;
+            text-align: left;
+          }
+        }
+
+        .hero-copy-container {
+          margin-top: 50px;
+
+          .hero-copy {
+            text-align: left;
+            flex-basis: 91.6666666667%;
+            max-width: 91.6666666667%;
+          }
+        }
+      }
+    }
+
+    .modal-trigger-container {
+      margin-top: 40px;
+
+      button {
+        font-size: 17px;
+        line-height: 1.2353641176;
+        letter-spacing: -0.022em;
+      }
+    }
+  }
+
+  .typography-headline-super {
+    font-size: 48px;
+    line-height: 1.0834933333;
+    letter-spacing: -0.003em;
+  }
+
+  .typography-section-copy {
+    font-size: 21px;
+    line-height: 1.1904761905;
+    letter-spacing: 0.011em;
+  }
+
+  .typography-section-eyebrow {
+    font-size: 19px;
+    line-height: 1.2105263158;
+    letter-spacing: 0.012em;
+  }
+
+  .typography-performance-stat {
+    font-size: 14px;
+    line-height: 1.2857742857;
+    letter-spacing: -0.016em;
+  }
+}

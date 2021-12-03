@@ -1,0 +1,243 @@
+.hero-sequence {
+  height: 430vh;
+
+  .sticky-element {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    min-height: 1033px;
+    overflow: hidden;
+
+    .sequence-element {
+      width: 1336px;
+      height: 786px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin: 0 auto;
+      transform: translateY(-50%) translateX(-50%);
+
+      .sequence {
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+
+      .stats-container {
+        height: 512px;
+        width: 1245px;
+        position: absolute;
+        top: 85px;
+        left: 160px;
+
+        .stat-item {
+          display: flex;
+          flex-wrap: wrap;
+          align-items: flex-end;
+          position: absolute;
+          z-index: 1;
+          color: #86868b;
+          overflow: hidden;
+
+          &:first-child {
+            right: 160px;
+            top: 130px;
+          }
+
+          &:nth-child(2) {
+            top: 284px;
+            left: -20px;
+          }
+
+          &:nth-child(3) {
+            bottom: -195px;
+            right: 310px;
+          }
+
+          &:nth-child(4) {
+            bottom: -250px;
+            left: 175px;
+          }
+
+          .stats-border {
+            width: 40px;
+            height: 4px;
+            background-color: #1d1d1f;
+            transform-origin: center left;
+          }
+
+          .stat-up-to {
+            font-size: 17px;
+            line-height: 1.2353641176;
+            font-weight: 500;
+            letter-spacing: -0.022em;
+            font-family: SF Pro Text, SF Pro Icons, Helvetica Neue, Helvetica,
+              Arial, sans-serif;
+            width: 100%;
+            margin-top: 14px;
+          }
+
+          .stat-stat {
+            font-size: 100px;
+            line-height: 1.04;
+            font-weight: 600;
+            letter-spacing: -0.015em;
+            font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica,
+              Arial, sans-serif;
+            color: #1d1d1f;
+          }
+
+          .stat-copy {
+            font-size: 17px;
+            line-height: 1.2353641176;
+            font-weight: 500;
+            letter-spacing: -0.022em;
+            font-family: SF Pro Text, SF Pro Icons, Helvetica Neue, Helvetica,
+              Arial, sans-serif;
+            margin-bottom: 12px;
+            margin-left: 13px;
+            white-space: pre-wrap;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1068px) {
+  .hero-sequence {
+    height: 430vh;
+
+    .sticky-element {
+      min-height: 426px;
+
+      .sequence-element {
+        width: 780px;
+        height: 426px;
+
+        .sequence {
+          transform: translateX(15px);
+        }
+
+        .stats-container {
+          top: 45px;
+          left: 55px;
+          width: 704px;
+          height: 298px;
+
+          .stat-item {
+            &:first-child {
+              right: -40px;
+              top: 84px;
+            }
+
+            &:nth-child(2) {
+              top: 162px;
+              left: 2px;
+            }
+
+            &:nth-child(3) {
+              bottom: -155px;
+              right: 30px;
+            }
+
+            &:nth-child(4) {
+              bottom: -185px;
+              left: 175px;
+            }
+
+            .stat-up-to {
+              font-size: 14px;
+              line-height: 1.2857742857;
+              letter-spacing: -0.016em;
+            }
+
+            .stat-stat {
+              font-size: 56px;
+              line-height: 1.0714285714;
+              letter-spacing: -0.005em;
+            }
+
+            .stat-copy {
+              font-size: 14px;
+              line-height: 1.2857742857;
+              letter-spacing: -0.016em;
+              margin-bottom: 7px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 734px) {
+  .hero-sequence {
+    height: auto;
+
+    .sticky-element {
+      position: static;
+      min-height: auto;
+      height: auto;
+
+      .sequence-element {
+        margin-left: auto;
+        margin-right: auto;
+        width: 87.5%;
+        position: static;
+        top: unset;
+        left: unset;
+        margin: 0 auto;
+        transform: unset;
+        height: auto;
+
+        .sequence {
+          width: 400px;
+          height: 223px;
+          position: relative;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+
+        .stats-container {
+          top: unset;
+          left: unset;
+          width: 100%;
+          position: relative;
+          height: auto;
+          margin-top: 34px;
+
+          .stat-item {
+            position: relative;
+            margin-top: 33px;
+            right: unset !important;
+            left: unset !important;
+            top: unset !important;
+            bottom: unset !important;
+
+            .stat-up-to {
+              font-size: 17px;
+              line-height: 1.2353641176;
+              letter-spacing: -0.022em;
+            }
+
+            .stat-stat {
+              width: 100%;
+              font-size: 74px;
+              line-height: 1.0543540541;
+              letter-spacing: -0.015em;
+            }
+
+            .stat-copy {
+              font-size: 17px;
+              line-height: 1.2353641176;
+              letter-spacing: -0.022em;
+              margin-bottom: 8px;
+              margin-left: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,48 @@
+.theme-dark {
+  background-color: #000;
+  color: #a1a1a6;
+
+  .footnote-number {
+    a {
+      &:hover {
+        color: #2997ff;
+      }
+    }
+  }
+}
+
+.section-content {
+  margin-left: auto;
+  margin-right: auto;
+  width: 980px;
+}
+
+.footnote-number {
+  top: auto;
+  position: relative;
+  vertical-align: initial;
+  font-feature-settings: 'numr';
+  font-size: 1em;
+
+  a {
+    vertical-align: inherit;
+    color: inherit;
+
+    &:hover {
+      color: '#06c';
+    }
+  }
+}
+
+@media only screen and (max-width: 1068px) {
+  .section-content {
+    max-width: 580px;
+  }
+}
+
+@media only screen and (max-width: 734px) {
+  .section-content {
+    max-width: 400px;
+    width: 87.5%;
+  }
+}
