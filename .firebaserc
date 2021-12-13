@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "macbookpro-2021": "macbookpro2021-rebuild",
+    "default": "macbookpro2021-rebuild"
+  }
+}

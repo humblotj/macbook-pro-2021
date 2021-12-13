@@ -2,7 +2,18 @@ import './App.scss';
 
 import { gsap } from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
+import { initializeApp, FirebaseOptions } from 'firebase/app';
+import { getAnalytics } from 'firebase/analytics';
+
 gsap.registerPlugin(ScrollTrigger);
+
+const firebaseConfig: FirebaseOptions = JSON.parse(
+  process.env.REACT_APP_API_KEY || '',
+);
+initializeApp(firebaseConfig);
+if (process.env.NODE_ENV !== 'development') {
+  getAnalytics();
+}
 
 import useScrollToTopOnRefresh from './hooks/useScrollToTopOnRefresh';
 import AppleNav from './components/AppleNav';
