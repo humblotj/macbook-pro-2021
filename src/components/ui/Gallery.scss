@@ -220,6 +220,10 @@
     .subsection-gallery {
         width: calc(100vw - 40px);
 
+        .subsection-gallery-content {
+            max-width: 580px;
+        }
+
         .tablist-wrapper {
             padding-top: 30px;
         }

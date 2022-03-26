@@ -152,7 +152,6 @@ const Configuration = () => {
         </h2>
         <figure ref={ref} className="hardware-lockup">
           <Picture
-            className=""
             srcSet={{
               small: chooseSizeSmall,
               small2x: chooseSizeSmall2x,

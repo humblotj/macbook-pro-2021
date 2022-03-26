@@ -12,6 +12,8 @@ import IntroHero from './components/hero/IntroHero';
 import MacbookNav from './components/MacbookNav';
 import Note from './components/Note';
 import Configuration from './components/performance/Configuration';
+import EvenMore from './components/performance/EvenMore';
+import EvenMoreTiles from './components/performance/EvenMoreTiles';
 import M1Max from './components/performance/M1Max';
 import M1Pro from './components/performance/M1Pro';
 import PerformanceIntro from './components/performance/PerformanceIntro';
@@ -45,6 +47,8 @@ const App = () => {
         <M1Pro />
         <M1Max />
         <Configuration />
+        <EvenMore />
+        <EvenMoreTiles />
       </section>
     </>
   );

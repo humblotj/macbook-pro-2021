@@ -1,0 +1,114 @@
+.subsection-even-more {
+    overflow: hidden;
+    padding-top: 140px;
+
+    .subsection-even-more-headline {
+        color: #f5f5f7;
+    }
+
+    .performance-section-copy {
+        padding-top: 43px;
+    }
+
+    .even-more-badges {
+        padding-top: 80px;
+
+        .badge-headline {
+            color: #f5f5f7;
+            border-bottom: 1px solid #86868b;
+            padding-bottom: 16px;
+            margin-bottom: 24px;
+            max-width: 470px;
+        }
+
+        .badge {
+            padding-bottom: 25px;
+        }
+
+        .badge-caption {
+            font-size: 17px;
+            line-height: 1.2353641176;
+            font-weight: 400;
+            letter-spacing: -0.022em;
+            font-family: SF Pro Text, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-weight: 500;
+            color: #a1a1a6;
+        }
+
+        .badge-value {
+            font-size: 80px;
+            line-height: 1.05;
+            font-weight: 600;
+            letter-spacing: -0.015em;
+            font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+        }
+
+        .badge-unit {
+            padding-left: 11px;
+        }
+    }
+
+    .column-14in-model {
+        .badge1 .badge-value {
+            color: #f2a624;
+            -webkit-text-fill-color: transparent;
+            text-fill-color: transparent;
+            -webkit-background-clip: text;
+            background-clip: text;
+            padding-bottom: 5px;
+            margin-bottom: -5px;
+            background-image: linear-gradient(45deg, #f2a624 -5%, #f39d25 105%);
+        }
+
+        .badge2 .badge-value {
+            color: #f39625;
+            -webkit-text-fill-color: transparent;
+            text-fill-color: transparent;
+            -webkit-background-clip: text;
+            background-clip: text;
+            padding-bottom: 5px;
+            margin-bottom: -5px;
+            background-image: linear-gradient(45deg, #f39625 -5%, #f39430 105%);
+        }
+    }
+
+    .column-16in-model {
+        .badge1 .badge-value {
+            color: #f38026;
+            -webkit-text-fill-color: transparent;
+            text-fill-color: transparent;
+            -webkit-background-clip: text;
+            background-clip: text;
+            padding-bottom: 5px;
+            margin-bottom: -5px;
+            background-image: linear-gradient(45deg, #f38026 -5%, #f47726 105%);
+        }
+
+        .badge2 .badge-value {
+            color: #f57027;
+            -webkit-text-fill-color: transparent;
+            text-fill-color: transparent;
+            -webkit-background-clip: text;
+            background-clip: text;
+            padding-bottom: 5px;
+            margin-bottom: -5px;
+            background-image: linear-gradient(45deg, #f57027 -5%, #e76026 105%);
+        }
+    }
+}
+
+@media only screen and (min-width: 1069px) {
+    .subsection-even-more .even-more-badges .badges {
+        .column:nth-child(2) {
+            padding-left: 40px;
+        }
+    }
+}
+
+@media only screen and (max-width: 734px) {
+    .subsection-even-more .even-more-badges .badges {
+        .column:nth-child(2) {
+            padding-top: 34px;
+        }
+    }
+}

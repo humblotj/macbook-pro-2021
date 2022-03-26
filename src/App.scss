@@ -44,6 +44,20 @@
   grid-template-columns: repeat(12, minmax(0, 1fr));
 }
 
+.column {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  min-width: 0px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+}
+
 .badge {
   margin-right: 2em;
   box-sizing: border-box;
@@ -63,18 +77,50 @@
   }
 
   .badge-caption {
+    left: 0;
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    z-index: 1;
+
     color: #f5f5f7;
     font-size: 17px;
     line-height: 1.2353641176;
     font-weight: 400;
     letter-spacing: -0.022em;
     font-family: SF Pro Text, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+
+    &:first-child {
+      top: auto;
+      bottom: 100%;
+    }
+  }
+
+  .badge-unit {
+    font-size: 40px;
+    line-height: 1.1;
+    font-weight: 400;
+    letter-spacing: 0em;
+    font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-weight: 600;
   }
 }
 
 .large-3 {
   flex-basis: 25%;
   max-width: 25%;
+}
+
+.large-5 {
+  flex-basis: 41.6666666667%;
+  max-width: 41.6666666667%;
+}
+
+.large-6 {
+  flex-basis: 50%;
+  max-width: 50%;
 }
 
 .large-7 {
@@ -87,6 +133,10 @@
   max-width: 83.3333333333%;
 }
 
+.large-offset-2 {
+  margin-left: 16.6666666667%;
+}
+
 @media only screen and (max-width: 1068px) {
   .section-content {
     max-width: 580px;
@@ -94,6 +144,10 @@
   .medium-4 {
     flex-basis: 33.3333333333%;
     max-width: 33.3333333333%;
+  }
+  .medium-5 {
+    flex-basis: 41.6666666667%;
+    max-width: 41.6666666667%;
   }
   .medium-10 {
     flex-basis: 83.3333333333%;
@@ -106,6 +160,9 @@
   .medium-12 {
     flex-basis: 100%;
     max-width: 100%;
+  }
+  .medium-offset-0 {
+    margin-left: 0;
   }
 }
 
