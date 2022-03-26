@@ -14,7 +14,7 @@
     margin-top: 85px;
 
     &:before {
-      content: '';
+      content: "";
       position: absolute;
       top: 0;
       width: 100%;
@@ -71,8 +71,6 @@
     p {
       position: absolute;
       overflow: hidden;
-      flex-basis: 25%;
-      max-width: 25%;
 
       &:first-child {
         top: 10.2%;
@@ -97,9 +95,6 @@
       &:nth-child(5) {
         top: 72.4%;
         left: 46.6%;
-
-        flex-basis: 33.3333333333%;
-        max-width: 33.3333333333%;
       }
     }
   }
@@ -110,8 +105,7 @@
   line-height: 1.1;
   font-weight: 600;
   letter-spacing: 0em;
-  font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial,
-    sans-serif;
+  font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
 @media only screen and (max-width: 1068px) {
@@ -129,9 +123,6 @@
 
     .subsection-performance-stats-copy {
       p {
-        flex-basis: 33.3333333333%;
-        max-width: 33.3333333333%;
-
         &:first-child {
           top: 14.3%;
           left: 58%;
@@ -155,9 +146,6 @@
         &:nth-child(5) {
           top: 65%;
           left: 47%;
-
-          flex-basis: 41.6666666667%;
-          max-width: 41.6666666667%;
         }
       }
     }
@@ -183,9 +171,6 @@
 
     .subsection-performance-stats-copy {
       p {
-        flex-basis: 41.6666666667%;
-        max-width: 41.6666666667%;
-
         &:first-child {
           top: 7.6%;
           left: 58%;

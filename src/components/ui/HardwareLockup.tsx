@@ -1,14 +1,15 @@
 import './HardwareLockup.scss';
 
-import { ReactNode, useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
+import { ReactNode, useEffect, useRef } from 'react';
 
-import hardwareSmall from '../../assets/m1_laptop_small.jpeg';
-import hardwareSmall2x from '../../assets/m1_laptop_small_2x.jpeg';
-import hardwareMedium from '../../assets/m1_laptop_medium.jpeg';
-import hardwareMedium2x from '../../assets/m1_laptop_medium_2x.jpeg';
 import hardwareLarge from '../../assets/m1_laptop_large.jpeg';
 import hardwareLarge2x from '../../assets/m1_laptop_large_2x.jpeg';
+import hardwareMedium from '../../assets/m1_laptop_medium.jpeg';
+import hardwareMedium2x from '../../assets/m1_laptop_medium_2x.jpeg';
+import hardwareSmall from '../../assets/m1_laptop_small.jpeg';
+import hardwareSmall2x from '../../assets/m1_laptop_small_2x.jpeg';
+import Picture from './Picture';
 
 const useFadeInOnScroll = (triggerRef: React.RefObject<HTMLElement>) => {
   useEffect(() => {
@@ -37,21 +38,17 @@ const HardwareLockup = ({ caption, children }: Props) => {
 
   return (
     <div className={'harware-lockup' + (caption ? ' with-caption' : '')}>
-      <picture className="hardware-image">
-        <source
-          srcSet={`${hardwareSmall}, ${hardwareSmall2x} 2x`}
-          media="(max-width:734px)"
-        />
-        <source
-          srcSet={`${hardwareMedium}, ${hardwareMedium2x} 2x`}
-          media="(max-width:1068px)"
-        />
-        <source
-          srcSet={`${hardwareLarge}, ${hardwareLarge2x} 2x`}
-          media="(min-width:0px)"
-        />
-        <img src={hardwareLarge} alt="" />
-      </picture>
+      <Picture
+        className="hardware-image"
+        srcSet={{
+          small: hardwareSmall,
+          small2x: hardwareSmall2x,
+          medium: hardwareMedium,
+          medium2x: hardwareMedium2x,
+          large: hardwareLarge,
+          large2x: hardwareLarge2x,
+        }}
+      />
       <figure ref={triggerRef} className="hardware-lockup-figure">
         <div className="hardware-lockup-media">{children}</div>
         {caption && (

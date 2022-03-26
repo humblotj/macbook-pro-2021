@@ -40,7 +40,7 @@
         overflow: hidden;
 
         &:after {
-          content: '';
+          content: "";
           height: 10px;
           width: 100%;
           position: absolute;
@@ -178,9 +178,6 @@
         .hero-copy {
           margin-left: auto;
           margin-right: auto;
-
-          flex-basis: 83.3333333333%;
-          max-width: 83.3333333333%;
         }
       }
     }
@@ -196,8 +193,7 @@
       line-height: 1.1904761905;
       font-weight: 600;
       letter-spacing: 0.011em;
-      font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica,
-        Arial, sans-serif;
+      font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
       transition: all 0.4s ease-in-out;
       border: 2px solid #f5f5f7;
       background: #f5f5f7;
@@ -226,7 +222,7 @@
         padding-left: 0.3em;
         top: 0;
         position: static;
-        content: '';
+        content: "";
         font-family: SF Pro Icons;
         color: inherit;
         display: inline-block;
@@ -246,8 +242,7 @@
   line-height: 1.05;
   font-weight: 600;
   letter-spacing: -0.015em;
-  font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial,
-    sans-serif;
+  font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
 .typography-section-copy {
@@ -255,8 +250,7 @@
   line-height: 1.1428571429;
   font-weight: 600;
   letter-spacing: 0.007em;
-  font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial,
-    sans-serif;
+  font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
 .typography-section-eyebrow {
@@ -264,8 +258,7 @@
   line-height: 1.1666666667;
   font-weight: 600;
   letter-spacing: 0.009em;
-  font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial,
-    sans-serif;
+  font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
 .typography-performance-stat {
@@ -273,8 +266,7 @@
   line-height: 1.2105263158;
   font-weight: 600;
   letter-spacing: 0.012em;
-  font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial,
-    sans-serif;
+  font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
 @media only screen and (max-width: 1068px) {
@@ -328,11 +320,6 @@
 
         .hero-copy-container {
           max-width: 590px;
-
-          .hero-copy {
-            flex-basis: 100%;
-            max-width: 100%;
-          }
         }
       }
     }
@@ -435,8 +422,6 @@
 
           .hero-copy {
             text-align: left;
-            flex-basis: 91.6666666667%;
-            max-width: 91.6666666667%;
           }
         }
       }

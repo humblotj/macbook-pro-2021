@@ -1,13 +1,13 @@
 import './PerformanceIntro.scss';
 
-import { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
+import { useEffect, useRef } from 'react';
 
-import useLottie from '../../hooks/useLottie';
 import gradientBackground from '../../assets/m1_bg_large_2x.png';
-import m1pro from '../../assets/m1pro.json';
 import m1max from '../../assets/m1max.json';
+import m1pro from '../../assets/m1pro.json';
+import useLottie from '../../hooks/useLottie';
 
 const useAnimateOnScroll = (
   triggerRef: React.RefObject<HTMLDivElement>,
@@ -138,7 +138,7 @@ const PerformanceIntro = () => {
     <section className="subsection-performance-intro">
       <div ref={triggerRef} className="sticky-container">
         <div className="sticky-element">
-          <div className="chip-container outer-chip-container  section-content">
+          <div className="chip-container outer-chip-container section-content">
             <div className="pro-chip-container">
               <div ref={proChipRef} className="image-sequence" />
             </div>
@@ -214,7 +214,7 @@ const PerformanceIntro = () => {
                 </div>
               </div>
               <div className="hero-copy-container section-content">
-                <p className="typography-section-copy hero-copy">
+                <p className="typography-section-copy large-10 medium-12 small-11 hero-copy">
                   M1 Pro and M1 Max scale the amazing M1 architecture to new
                   heights — and for the first time, they bring a system on a
                   chip (SoC) architecture to a pro notebook. Both have more CPU

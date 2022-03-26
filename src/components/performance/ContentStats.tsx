@@ -1,7 +1,7 @@
 import './ContentStats.scss';
 
-import { RefObject, useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
+import { RefObject, useEffect, useRef } from 'react';
 
 import FakeLink from '../ui/FakeLink';
 
@@ -61,23 +61,23 @@ const ContentStats = ({
           <video src={video} autoPlay muted loop></video>
         </div>
         <div className="subsection-performance-stats-copy typography-performance-section-stats">
-          <p className="subsection-performance-stat">
+          <p className="subsection-performance-stat large-3 medium-4 small-5">
             <span className="stat-border"></span>
             <span className="stat-value">{gpuDesc}</span>
           </p>
-          <p className="subsection-performance-stat">
+          <p className="subsection-performance-stat large-3 medium-4 small-5">
             <span className="stat-border"></span>
             <span className="stat-value">{memoryDesc}</span>
           </p>
-          <p className="subsection-performance-stat">
+          <p className="subsection-performance-stat large-3 medium-4 small-5">
             <span className="stat-border"></span>
             <span className="stat-value">{bandwidthDesc}</span>
           </p>
-          <p className="subsection-performance-stat">
+          <p className="subsection-performance-stat large-3 medium-4 small-5">
             <span className="stat-border"></span>
             <span className="stat-value">{displayDesc}</span>
           </p>
-          <p className="subsection-performance-stat">
+          <p className="subsection-performance-stat large-4 medium-5 small-5">
             <span className="stat-border"></span>
             <span className="stat-value">
               {resDesc}

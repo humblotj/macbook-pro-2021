@@ -1,14 +1,14 @@
 import './IntroHero.scss';
 
-import { SyntheticEvent } from 'react';
 import { gsap } from 'gsap';
+import { SyntheticEvent } from 'react';
 
-import { largeBreakpoint, mediumBreakpoint } from '../../utils/utils';
-import useSize from '../../hooks/useSize';
-import FakeLink from '../ui/FakeLink';
 import largeVideo from '../../assets/intro-hero_large_2x.mp4';
 import mediumVideo from '../../assets/intro-hero_medium_2x.mp4';
 import smallVideo from '../../assets/intro-hero_small_2x.mp4';
+import useSize from '../../hooks/useSize';
+import { largeBreakpoint, mediumBreakpoint } from '../../utils/utils';
+import FakeLink from '../ui/FakeLink';
 
 const useVideo = () => {
   const [width] = useSize();
@@ -98,8 +98,10 @@ const IntroHero = () => {
       </div>
       <div className="intro-text-container">
         <div className="section-content">
-          <h2 className="intro-paragraph">Supercharged for pros.</h2>
-          <p className="intro-paragraph typography-eyebrow-super">
+          <h2 className="intro-paragraph medium-10 small-12">
+            Supercharged for pros.
+          </h2>
+          <p className="intro-paragraph typography-eyebrow-super large-10 medium-12">
             The most powerful MacBook Pro ever is here. With the blazing-fast M1
             Pro or M1 Max chip — the first Apple silicon designed for pros — you
             get groundbreaking performance and amazing battery life. Add to that

@@ -1,5 +1,5 @@
-import { useEffect, useRef } from 'react';
 import ScrollTrigger from 'gsap/ScrollTrigger';
+import { useEffect, useRef } from 'react';
 
 const useReplayOnScrollIn = (ref: React.RefObject<HTMLVideoElement>) => {
   useEffect(() => {

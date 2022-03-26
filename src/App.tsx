@@ -1,9 +1,21 @@
 import './App.scss';
 
+import { getAnalytics } from 'firebase/analytics';
+import { FirebaseOptions, initializeApp } from 'firebase/app';
 import { gsap } from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
-import { initializeApp, FirebaseOptions } from 'firebase/app';
-import { getAnalytics } from 'firebase/analytics';
+
+import AppleNav from './components/AppleNav';
+import HeroPorts from './components/hero/HeroPorts';
+import HeroSequence from './components/hero/HeroSequence';
+import IntroHero from './components/hero/IntroHero';
+import MacbookNav from './components/MacbookNav';
+import Note from './components/Note';
+import Configuration from './components/performance/Configuration';
+import M1Max from './components/performance/M1Max';
+import M1Pro from './components/performance/M1Pro';
+import PerformanceIntro from './components/performance/PerformanceIntro';
+import useScrollToTopOnRefresh from './hooks/useScrollToTopOnRefresh';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -14,17 +26,6 @@ initializeApp(firebaseConfig);
 if (process.env.NODE_ENV !== 'development') {
   getAnalytics();
 }
-
-import useScrollToTopOnRefresh from './hooks/useScrollToTopOnRefresh';
-import AppleNav from './components/AppleNav';
-import IntroHero from './components/hero/IntroHero';
-import MacbookNav from './components/MacbookNav';
-import HeroSequence from './components/hero/HeroSequence';
-import HeroPorts from './components/hero/HeroPorts';
-import PerformanceIntro from './components/performance/PerformanceIntro';
-import M1Pro from './components/performance/M1Pro';
-import M1Max from './components/performance/M1Max';
-import Note from './components/Note';
 
 const App = () => {
   useScrollToTopOnRefresh();
@@ -43,6 +44,7 @@ const App = () => {
         <PerformanceIntro />
         <M1Pro />
         <M1Max />
+        <Configuration />
       </section>
     </>
   );

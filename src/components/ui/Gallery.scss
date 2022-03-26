@@ -1,0 +1,334 @@
+.subsection-gallery {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    box-sizing: border-box;
+    background-color: #151516;
+    width: 1140px;
+    max-width: calc(100vw - 40px);
+    padding: 105px 0;
+    margin-bottom: 20px;
+
+    .subsection-gallery-content {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 980px;
+    }
+
+    .tablist-wrapper {
+        padding-top: 44px;
+
+        .tabnav {
+            text-align: left;
+        }
+
+        .tabnav-items {
+            margin-left: 0px;
+            display: flex;
+            flex-wrap: wrap;
+            list-style: none;
+        }
+
+        .tabnav-item:hover {
+            text-decoration: underline;
+        }
+
+        .tabnav-item.current {
+            color: #fff;
+            text-decoration: none;
+            pointer-events: none;
+        }
+
+        .separator {
+            display: inline-block;
+            margin: 0 4px;
+            color: #6e6e73;
+        }
+
+        .tabnav-link {
+            color: inherit;
+        }
+    }
+
+    .item-container {
+        position: relative;
+
+        .gallery-item {
+            padding-top: 75px;
+
+            &.grid {
+                padding-left: 0;
+                padding-right: 0;
+            }
+
+            .disclaimer {
+                font-size: 28px;
+                line-height: 1.1428571429;
+                font-weight: 600;
+                letter-spacing: 0.007em;
+                font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+                color: #fff;
+
+                &.single-disclaimer {
+                    text-align: center;
+                    padding-bottom: 15px;
+                    grid-column: span 12;
+                }
+            }
+
+            .group {
+                margin-right: 60px;
+
+                .disclaimer {
+                    padding-bottom: 39px;
+                    white-space: nowrap;
+                }
+
+                .gallery-model-headline {
+                    color: #f5f5f7;
+                    font-size: 24px;
+                    line-height: 1.1666666667;
+                    font-weight: 600;
+                    letter-spacing: 0.009em;
+                    font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+                }
+            }
+
+            .bars-container {
+                display: grid;
+                grid-template-columns: 1fr auto;
+                grid-row-gap: 23px;
+                row-gap: 23px;
+                margin-top: 0;
+                padding-top: 38px;
+
+                .bar-content-container {
+                    position: relative;
+                    width: 100%;
+
+                    &:not(:first-child) {
+                        margin-top: 16px;
+                    }
+
+                    .bar-mask {
+                        position: relative;
+                        overflow: hidden;
+                        border-radius: 5px;
+                        height: 6px;
+                        z-index: 1;
+                    }
+
+                    .bar-caption {
+                        display: inline-block;
+                        white-space: nowrap;
+                        padding-top: 10px;
+                        color: #fff;
+                    }
+                }
+
+                .bar {
+                    opacity: 0;
+                    height: 100%;
+                    transform-origin: left;
+                    border-radius: inherit;
+                    background: #fff;
+                }
+
+                .bar-m1-max .bar {
+                    background: linear-gradient(45deg, #ff9fe1, #8727ff);
+                }
+
+                .bar-m1-pro .bar {
+                    background: linear-gradient(45deg, #25a5e6, #0d3ecc);
+                }
+
+                .bar-legacy {
+                    .bar-caption {
+                        color: #a1a1a6;
+                    }
+
+                    .bar {
+                        background: #a1a1a6;
+                    }
+                }
+
+                .badge {
+                    border-top: none;
+                    padding: 0;
+                    margin: 0;
+                }
+
+                .badge-content {
+                    top: -8px;
+                    padding-top: 0;
+                    margin: 0 0 0 20px;
+                }
+
+                .badge-value-container {
+                    display: flex;
+                    align-items: center;
+                }
+
+                .bar-m1-max .badge-value-container {
+                    color: #9d44fd;
+                }
+
+                .bar-m1-pro .badge-value-container {
+                    color: #4698ff;
+                }
+
+                .badge-value {
+                    font-size: 32px;
+                    line-height: 1.125;
+                    font-weight: 600;
+                    letter-spacing: 0.004em;
+                    font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+                }
+
+                .badge-unit {
+                    display: inline-block;
+                    font-size: 32px;
+                    line-height: 1.125;
+                    font-weight: 600;
+                    letter-spacing: 0.004em;
+                    font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+                    margin: 0;
+                }
+
+                .badge-caption {
+                    position: relative;
+                    top: -3px;
+                }
+            }
+        }
+
+        .total-column-2 {
+            grid-column: span 6;
+        }
+    }
+}
+
+.typography-manifesto {
+    font-size: 32px;
+    line-height: 1.25;
+    font-weight: 600;
+    letter-spacing: 0.004em;
+    font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+@media only screen and (max-width: 1068px) {
+    .subsection-gallery {
+        width: calc(100vw - 40px);
+
+        .tablist-wrapper {
+            padding-top: 30px;
+        }
+
+        .item-container {
+            .gallery-item {
+                display: block;
+                padding-top: 65px;
+
+                .disclaimer.single-disclaimer {
+                    text-align: left;
+                    padding-bottom: 39px;
+                }
+
+                .disclaimer {
+                    white-space: normal !important;
+                }
+
+                .group {
+                    margin-right: 0px;
+                    margin-bottom: 60px;
+
+                    &:last-of-type {
+                        margin-bottom: 0;
+                    }
+                }
+
+                .bars-container {
+                    padding-top: 38px;
+                }
+            }
+        }
+    }
+
+    .typography-manifesto {
+        font-size: 28px;
+        line-height: 1.2858342857;
+        font-weight: 600;
+        letter-spacing: 0.007em;
+        font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+    }
+}
+
+@media only screen and (max-width: 734px) {
+    .subsection-gallery {
+        padding: 50px 0;
+        max-width: 400px;
+
+        .subsection-gallery-content {
+            max-width: none;
+            margin-left: unset;
+            margin-right: unset;
+        }
+
+        .subsection-gallery-copy {
+            padding: 0 34px;
+        }
+
+        .tablist-wrapper {
+            padding-top: 24px;
+
+            .tabnav {
+                overflow: hidden;
+                height: 1.1666666667em;
+            }
+
+            .tabnav-items {
+                padding-bottom: 1.1666666667em;
+                padding-left: 34px;
+                margin: 0 calc(max(env(safe-area-inset-left) + -10px, 0));
+                overflow-x: auto;
+                overflow-y: hidden;
+                white-space: nowrap;
+                -webkit-overflow-scrolling: touch;
+                -ms-overflow-style: none;
+                flex-wrap: nowrap;
+            }
+        }
+
+        .item-container {
+            padding: 0 34px;
+
+            .gallery-item {
+                padding-top: 59px;
+
+                .disclaimer.single-disclaimer {
+                    padding-bottom: 29px;
+                }
+
+                .group {
+                    margin-bottom: 56px;
+                }
+
+                .bars-container {
+                    flex-direction: column;
+
+                    .badge {
+                        min-width: unset;
+                    }
+                }
+            }
+        }
+    }
+
+    .typography-manifesto {
+        font-size: 24px;
+        line-height: 1.3334133333;
+        font-weight: 600;
+        letter-spacing: 0.009em;
+        font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+    }
+}

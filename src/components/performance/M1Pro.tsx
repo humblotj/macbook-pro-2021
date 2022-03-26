@@ -1,13 +1,13 @@
 import './M1.scss';
 
-import useSize from '../../hooks/useSize';
-import { largeBreakpoint, mediumBreakpoint } from '../../utils/utils';
-import ContentStats from './ContentStats';
-import HardwareLockup from '../ui/HardwareLockup';
 import largeArtworkVideo from '../../assets/artwork_video_large_2x.mp4';
 import mediumArtworkVideo from '../../assets/artwork_video_medium_2x.mp4';
 import smallArtworkVideo from '../../assets/artwork_video_small_2x.mp4';
 import screenProcessing from '../../assets/screen_processing_large_2x.jpeg';
+import useSize from '../../hooks/useSize';
+import { largeBreakpoint, mediumBreakpoint } from '../../utils/utils';
+import HardwareLockup from '../ui/HardwareLockup';
+import ContentStats from './ContentStats';
 
 const useVideo = () => {
   const [width] = useSize();
@@ -37,7 +37,7 @@ const M1Pro = () => {
         <h3 className="subsection-performance-headline typography-section-headline-reduced">
           Scary fast
         </h3>
-        <div className="subsection-performance-copy typography-performance-section-copy">
+        <div className="subsection-performance-copy typography-performance-section-copy large-10 medium-11 small-12">
           <p>
             M1 Pro takes the exceptional performance of the M1 architecture to a
             whole new level for pro users. Even the most ambitious projects are

@@ -1,16 +1,16 @@
 import './M1.scss';
 
-import useSize from '../../hooks/useSize';
-import { largeBreakpoint, mediumBreakpoint } from '../../utils/utils';
-import ContentStats from './ContentStats';
-import HardwareLockup from '../ui/HardwareLockup';
-import VideoPlayer from '../ui/VideoPlayer';
 import largeFinalCutScene from '../../assets/finalcutpro_scene_large_2x.mp4';
 import mediumFinalCutScene from '../../assets/finalcutpro_scene_medium_2x.mp4';
 import smallFinalCutScene from '../../assets/finalcutpro_scene_small_2x.mp4';
 import largeGraphicScreen from '../../assets/graphic_screen_large_2x.mp4';
-import mediumGraphicScreen from '../../assets/graphic_screen_large_2x.mp4';
-import smallGraphicScreen from '../../assets/graphic_screen_large_2x.mp4';
+import mediumGraphicScreen from '../../assets/graphic_screen_medium_2x.mp4';
+import smallGraphicScreen from '../../assets/graphic_screen_small_2x.mp4';
+import useSize from '../../hooks/useSize';
+import { largeBreakpoint, mediumBreakpoint } from '../../utils/utils';
+import HardwareLockup from '../ui/HardwareLockup';
+import VideoPlayer from '../ui/VideoPlayer';
+import ContentStats from './ContentStats';
 
 const useVideo = () => {
   const [width] = useSize();
@@ -53,7 +53,7 @@ const M1Max = () => {
         <h3 className="subsection-performance-headline typography-section-headline-reduced">
           Scary faster
         </h3>
-        <div className="subsection-performance-copy typography-performance-section-copy">
+        <div className="subsection-performance-copy typography-performance-section-copy large-10 medium-11 small-12">
           <p>
             M1 Max is the most powerful chip ever created for a pro notebook,
             with 10 CPU cores, up to 32 GPU cores, and a 16-core Neural Engine.

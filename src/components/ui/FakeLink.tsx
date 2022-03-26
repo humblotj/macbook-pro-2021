@@ -1,13 +1,13 @@
-import { ReactNode, MouseEvent } from 'react';
+import { HTMLProps, MouseEvent, ReactNode } from 'react';
 
-interface Props {
-  className?: string | null;
+interface Props extends HTMLProps<HTMLAnchorElement> {
   onClick?: () => void;
   children?: ReactNode;
 }
 
 const FakeLink = ({
-  className = null,
+  href = '',
+  className,
   onClick = () => {},
   children = null,
 }: Props) => {
@@ -17,7 +17,11 @@ const FakeLink = ({
   };
 
   return (
-    <a href="" className={className as string} onClick={onFakeLinkClick}>
+    <a
+      href={href}
+      className={(className || null) as string}
+      onClick={onFakeLinkClick}
+    >
       {children}
     </a>
   );
