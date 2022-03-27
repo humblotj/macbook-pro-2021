@@ -1,11 +1,11 @@
 import './M1.scss';
 
-import largeArtworkVideo from '../../assets/artwork_video_large_2x.mp4';
-import mediumArtworkVideo from '../../assets/artwork_video_medium_2x.mp4';
-import smallArtworkVideo from '../../assets/artwork_video_small_2x.mp4';
-import screenProcessing from '../../assets/screen_processing_large_2x.jpeg';
-import useSize from '../../hooks/useSize';
-import { largeBreakpoint, mediumBreakpoint } from '../../utils/utils';
+import largeArtworkVideo from 'assets/artwork_video_large_2x.mp4';
+import mediumArtworkVideo from 'assets/artwork_video_medium_2x.mp4';
+import smallArtworkVideo from 'assets/artwork_video_small_2x.mp4';
+import screenProcessing from 'assets/screen_processing_large_2x.jpeg';
+import useSize from 'hooks/useSize';
+import { largeBreakpoint, mediumBreakpoint } from 'utils/utils';
 import HardwareLockup from '../ui/HardwareLockup';
 import ContentStats from './ContentStats';
 

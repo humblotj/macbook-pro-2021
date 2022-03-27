@@ -3,11 +3,11 @@ import './IntroHero.scss';
 import { gsap } from 'gsap';
 import { SyntheticEvent } from 'react';
 
-import largeVideo from '../../assets/intro-hero_large_2x.mp4';
-import mediumVideo from '../../assets/intro-hero_medium_2x.mp4';
-import smallVideo from '../../assets/intro-hero_small_2x.mp4';
-import useSize from '../../hooks/useSize';
-import { largeBreakpoint, mediumBreakpoint } from '../../utils/utils';
+import largeVideo from 'assets/intro-hero_large_2x.mp4';
+import mediumVideo from 'assets/intro-hero_medium_2x.mp4';
+import smallVideo from 'assets/intro-hero_small_2x.mp4';
+import useSize from 'hooks/useSize';
+import { largeBreakpoint, mediumBreakpoint } from 'utils/utils';
 import FakeLink from '../ui/FakeLink';
 
 const useVideo = () => {

@@ -1,11 +1,11 @@
 import './EvenMore.scss';
 
-import screenAllDayLarge from '../../assets/screen_all_day_large.jpeg';
-import screenAllDayLarge2x from '../../assets/screen_all_day_large_2x.jpeg';
-import screenAllDayMedium from '../../assets/screen_all_day_medium.jpeg';
-import screenAllDayMedium2x from '../../assets/screen_all_day_medium_2x.jpeg';
-import screenAllDaySmall from '../../assets/screen_all_day_small.jpeg';
-import screenAllDaySmall2x from '../../assets/screen_all_day_small_2x.jpeg';
+import screenAllDayLarge from 'assets/screen_all_day_large.jpeg';
+import screenAllDayLarge2x from 'assets/screen_all_day_large_2x.jpeg';
+import screenAllDayMedium from 'assets/screen_all_day_medium.jpeg';
+import screenAllDayMedium2x from 'assets/screen_all_day_medium_2x.jpeg';
+import screenAllDaySmall from 'assets/screen_all_day_small.jpeg';
+import screenAllDaySmall2x from 'assets/screen_all_day_small_2x.jpeg';
 import FakeLink from '../ui/FakeLink';
 import HardwareLockup from '../ui/HardwareLockup';
 import Picture from '../ui/Picture';

@@ -3,12 +3,12 @@ import './Configuration.scss';
 import { gsap } from 'gsap';
 import { useEffect, useRef } from 'react';
 
-import chooseSizeLarge from '../../assets/choose_size_large.jpeg';
-import chooseSizeLarge2x from '../../assets/choose_size_large_2x.jpeg';
-import chooseSizeMedium from '../../assets/choose_size_medium.jpeg';
-import chooseSizeMedium2x from '../../assets/choose_size_medium_2x.jpeg';
-import chooseSizeSmall from '../../assets/choose_size_small.jpeg';
-import chooseSizeSmall2x from '../../assets/choose_size_small_2x.jpeg';
+import chooseSizeLarge from 'assets/choose_size_large.jpeg';
+import chooseSizeLarge2x from 'assets/choose_size_large_2x.jpeg';
+import chooseSizeMedium from 'assets/choose_size_medium.jpeg';
+import chooseSizeMedium2x from 'assets/choose_size_medium_2x.jpeg';
+import chooseSizeSmall from 'assets/choose_size_small.jpeg';
+import chooseSizeSmall2x from 'assets/choose_size_small_2x.jpeg';
 import Gallery from '../ui/Gallery';
 import Picture from '../ui/Picture';
 

@@ -5,19 +5,19 @@ import { FirebaseOptions, initializeApp } from 'firebase/app';
 import { gsap } from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
 
-import AppleNav from './components/AppleNav';
-import HeroPorts from './components/hero/HeroPorts';
-import HeroSequence from './components/hero/HeroSequence';
-import IntroHero from './components/hero/IntroHero';
-import MacbookNav from './components/MacbookNav';
-import Note from './components/Note';
-import Configuration from './components/performance/Configuration';
-import EvenMore from './components/performance/EvenMore';
-import EvenMoreTiles from './components/performance/EvenMoreTiles';
-import M1Max from './components/performance/M1Max';
-import M1Pro from './components/performance/M1Pro';
-import PerformanceIntro from './components/performance/PerformanceIntro';
-import useScrollToTopOnRefresh from './hooks/useScrollToTopOnRefresh';
+import AppleNav from 'components/AppleNav';
+import HeroPorts from 'components/hero/HeroPorts';
+import HeroSequence from 'components/hero/HeroSequence';
+import IntroHero from 'components/hero/IntroHero';
+import MacbookNav from 'components/MacbookNav';
+import Note from 'components/Note';
+import Configuration from 'components/performance/Configuration';
+import EvenMore from 'components/performance/EvenMore';
+import EvenMoreTiles from 'components/performance/EvenMoreTiles';
+import M1Max from 'components/performance/M1Max';
+import M1Pro from 'components/performance/M1Pro';
+import PerformanceIntro from 'components/performance/PerformanceIntro';
+import useScrollToTopOnRefresh from 'hooks/useScrollToTopOnRefresh';
 
 gsap.registerPlugin(ScrollTrigger);
 

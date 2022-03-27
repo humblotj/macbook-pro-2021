@@ -3,12 +3,12 @@ import './HardwareLockup.scss';
 import { gsap } from 'gsap';
 import { ReactNode, useEffect, useRef } from 'react';
 
-import hardwareLarge from '../../assets/m1_laptop_large.jpeg';
-import hardwareLarge2x from '../../assets/m1_laptop_large_2x.jpeg';
-import hardwareMedium from '../../assets/m1_laptop_medium.jpeg';
-import hardwareMedium2x from '../../assets/m1_laptop_medium_2x.jpeg';
-import hardwareSmall from '../../assets/m1_laptop_small.jpeg';
-import hardwareSmall2x from '../../assets/m1_laptop_small_2x.jpeg';
+import hardwareLarge from 'assets/m1_laptop_large.jpeg';
+import hardwareLarge2x from 'assets/m1_laptop_large_2x.jpeg';
+import hardwareMedium from 'assets/m1_laptop_medium.jpeg';
+import hardwareMedium2x from 'assets/m1_laptop_medium_2x.jpeg';
+import hardwareSmall from 'assets/m1_laptop_small.jpeg';
+import hardwareSmall2x from 'assets/m1_laptop_small_2x.jpeg';
 import Picture from './Picture';
 
 const useFadeInOnScroll = (triggerRef: React.RefObject<HTMLElement>) => {

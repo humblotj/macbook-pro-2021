@@ -4,10 +4,10 @@ import { gsap } from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
 import { useEffect, useRef } from 'react';
 
-import gradientBackground from '../../assets/m1_bg_large_2x.png';
-import m1max from '../../assets/m1max.json';
-import m1pro from '../../assets/m1pro.json';
-import useLottie from '../../hooks/useLottie';
+import gradientBackground from 'assets/m1_bg_large_2x.png';
+import m1max from 'assets/m1max.json';
+import m1pro from 'assets/m1pro.json';
+import useLottie from 'hooks/useLottie';
 
 const useAnimateOnScroll = (
   triggerRef: React.RefObject<HTMLDivElement>,

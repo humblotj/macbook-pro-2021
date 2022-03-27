@@ -1,17 +1,17 @@
 import './EvenMoreTiles.scss';
 
-import coolestPartLarge from '../../assets/coolest_part_large.jpeg';
-import coolestPartLarge2x from '../../assets/coolest_part_large_2x.jpeg';
-import coolestPartMedium from '../../assets/coolest_part_medium.jpeg';
-import coolestPartMedium2x from '../../assets/coolest_part_medium_2x.jpeg';
-import coolestPartSmall from '../../assets/coolest_part_small.jpeg';
-import coolestPartSmall2x from '../../assets/coolest_part_small_2x.jpeg';
-import fastAndVastLarge from '../../assets/fast_and_vast_large.jpeg';
-import fastAndVastLarge2x from '../../assets/fast_and_vast_large_2x.jpeg';
-import fastAndVastMedium from '../../assets/fast_and_vast_medium.jpeg';
-import fastAndVastMedium2x from '../../assets/fast_and_vast_medium_2x.jpeg';
-import fastAndVastSmall from '../../assets/fast_and_vast_small.jpeg';
-import fastAndVastSmall2x from '../../assets/fast_and_vast_small_2x.jpeg';
+import coolestPartLarge from 'assets/coolest_part_large.jpeg';
+import coolestPartLarge2x from 'assets/coolest_part_large_2x.jpeg';
+import coolestPartMedium from 'assets/coolest_part_medium.jpeg';
+import coolestPartMedium2x from 'assets/coolest_part_medium_2x.jpeg';
+import coolestPartSmall from 'assets/coolest_part_small.jpeg';
+import coolestPartSmall2x from 'assets/coolest_part_small_2x.jpeg';
+import fastAndVastLarge from 'assets/fast_and_vast_large.jpeg';
+import fastAndVastLarge2x from 'assets/fast_and_vast_large_2x.jpeg';
+import fastAndVastMedium from 'assets/fast_and_vast_medium.jpeg';
+import fastAndVastMedium2x from 'assets/fast_and_vast_medium_2x.jpeg';
+import fastAndVastSmall from 'assets/fast_and_vast_small.jpeg';
+import fastAndVastSmall2x from 'assets/fast_and_vast_small_2x.jpeg';
 import FakeLink from '../ui/FakeLink';
 import Picture from '../ui/Picture';
 

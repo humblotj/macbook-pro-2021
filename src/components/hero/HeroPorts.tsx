@@ -1,10 +1,10 @@
 import './HeroPorts.scss';
 
-import { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
+import { useEffect, useRef } from 'react';
 
-import leftPorts from '../../assets/side_left_large_2x.jpeg';
-import rightPorts from '../../assets/side_right_large_2x.jpeg';
+import leftPorts from 'assets/side_left_large_2x.jpeg';
+import rightPorts from 'assets/side_right_large_2x.jpeg';
 
 const HeroPorts = () => {
   const ref = useRef<HTMLDivElement>(null);

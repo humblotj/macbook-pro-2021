@@ -1,13 +1,13 @@
 import './M1.scss';
 
-import largeFinalCutScene from '../../assets/finalcutpro_scene_large_2x.mp4';
-import mediumFinalCutScene from '../../assets/finalcutpro_scene_medium_2x.mp4';
-import smallFinalCutScene from '../../assets/finalcutpro_scene_small_2x.mp4';
-import largeGraphicScreen from '../../assets/graphic_screen_large_2x.mp4';
-import mediumGraphicScreen from '../../assets/graphic_screen_medium_2x.mp4';
-import smallGraphicScreen from '../../assets/graphic_screen_small_2x.mp4';
-import useSize from '../../hooks/useSize';
-import { largeBreakpoint, mediumBreakpoint } from '../../utils/utils';
+import largeFinalCutScene from 'assets/finalcutpro_scene_large_2x.mp4';
+import mediumFinalCutScene from 'assets/finalcutpro_scene_medium_2x.mp4';
+import smallFinalCutScene from 'assets/finalcutpro_scene_small_2x.mp4';
+import largeGraphicScreen from 'assets/graphic_screen_large_2x.mp4';
+import mediumGraphicScreen from 'assets/graphic_screen_medium_2x.mp4';
+import smallGraphicScreen from 'assets/graphic_screen_small_2x.mp4';
+import useSize from 'hooks/useSize';
+import { largeBreakpoint, mediumBreakpoint } from 'utils/utils';
 import HardwareLockup from '../ui/HardwareLockup';
 import VideoPlayer from '../ui/VideoPlayer';
 import ContentStats from './ContentStats';

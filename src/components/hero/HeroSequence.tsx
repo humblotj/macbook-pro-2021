@@ -1,16 +1,16 @@
 import './HeroSequence.scss';
 
-import { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
+import { useEffect, useRef } from 'react';
 
-import useLottie from '../../hooks/useLottie';
+import heroLarge from 'assets/hero_large.json';
+import heroMedium from 'assets/hero_medium.json';
+import heroSmall from 'assets/hero_small.json';
+import useLottie from 'hooks/useLottie';
+import useSize from 'hooks/useSize';
+import { largeBreakpoint, mediumBreakpoint } from 'utils/utils';
 import FakeLink from '../ui/FakeLink';
-import heroLarge from '../../assets/hero_large.json';
-import heroMedium from '../../assets/hero_medium.json';
-import heroSmall from '../../assets/hero_small.json';
-import useSize from '../../hooks/useSize';
-import { largeBreakpoint, mediumBreakpoint } from '../../utils/utils';
 
 const StatItem = ({
   stat,
