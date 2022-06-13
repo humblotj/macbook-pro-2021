@@ -4,8 +4,7 @@ const Note = () => (
   <div className="note">
     <div className="note-inner">
       <p className="note-paragraph">
-        This project was made for demo purposes and is not affiliated with Apple
-        in any way. All rights of the images, logos, and texts belong to Apple.
+        이 프로젝트는 시연 목적으로 인터랙티브 디벨로퍼에 의해 개발되었습니다.
       </p>
     </div>
   </div>
